@@ -22,6 +22,12 @@ class ProjectsPage extends StatelessWidget {
               },
               child: Text('Onboarding'.toUpperCase()),
             ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pushNamed(AppRoutes.loginUi);
+              },
+              child: Text('UI Login'.toUpperCase()),
+            ),
           ],
         ),
       ),
