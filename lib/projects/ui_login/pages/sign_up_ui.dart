@@ -103,6 +103,7 @@ class _SignUpUIState extends State<SignUpUI> {
                           ),
                         ),
                         TextField(
+                          obscureText: obscureText,
                           decoration: InputDecoration(
                             hintText: "********",
                             suffixIcon: IconButton(

@@ -80,9 +80,12 @@ class HomeUi extends StatelessWidget {
                         ),
                       ),
                     ),
-                    child: Text(
-                      'Sign In'.toUpperCase(),
-                      style: TextStyle(color: Colors.white),
+                    child: Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: Text(
+                        'Sign In'.toUpperCase(),
+                        style: TextStyle(fontSize: 16, color: Colors.white),
+                      ),
                     ),
                   ),
                   SizedBox(height: 20),
@@ -90,10 +93,14 @@ class HomeUi extends StatelessWidget {
                     onPressed: () {
                       Navigator.of(context).pushNamed(AppRoutes.signup);
                     },
-                    child: Text(
-                      'Sign Up'.toUpperCase(),
-                      style: TextStyle(
-                        color: Colors.black,
+                    child: Padding(
+                      padding: const EdgeInsets.all(12.0),
+                      child: Text(
+                        'Sign Up'.toUpperCase(),
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.black,
+                        ),
                       ),
                     ),
                   ),

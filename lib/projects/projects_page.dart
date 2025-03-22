@@ -8,8 +8,13 @@ class ProjectsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Practicas 2025'),
-        backgroundColor: Colors.indigoAccent,
+        title: const Text(
+          'Practice for Developer',
+          style: TextStyle(
+            color: Colors.white,
+          ),
+        ),
+        backgroundColor: Colors.black,
       ),
       body: Padding(
         padding: const EdgeInsets.all(20.0),
@@ -20,13 +25,30 @@ class ProjectsPage extends StatelessWidget {
               onPressed: () {
                 Navigator.of(context).pushNamed(AppRoutes.onboarding);
               },
-              child: Text('Onboarding'.toUpperCase()),
+              style: ButtonStyle(
+                backgroundColor: WidgetStatePropertyAll(Colors.black),
+              ),
+              child: Text(
+                'Onboarding',
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
             ),
+            SizedBox(height: 10),
             ElevatedButton(
               onPressed: () {
                 Navigator.of(context).pushNamed(AppRoutes.loginUi);
               },
-              child: Text('UI Login'.toUpperCase()),
+              style: ButtonStyle(
+                backgroundColor: WidgetStatePropertyAll(Colors.black),
+              ),
+              child: Text(
+                'UI Login',
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
             ),
           ],
         ),
